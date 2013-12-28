@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6CA167CC186E81B4008F3F00 /* SimblPluginsForTwitter */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6CA167CD186E81B4008F3F00 /* Build configuration list for PBXAggregateTarget "SimblPluginsForTwitter" */;
+			buildPhases = (
+				6CA167D2186E8412008F3F00 /* ShellScript */,
+			);
+			dependencies = (
+				6CA167D1186E81C9008F3F00 /* PBXTargetDependency */,
+			);
+			name = SimblPluginsForTwitter;
+			productName = SimblPluginsForTwitter;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		6CA167BE186E8037008F3F00 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA167A6186E7D0C008F3F00 /* Cocoa.framework */; };
+		6CA167C4186E8037008F3F00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CA167C2186E8037008F3F00 /* InfoPlist.strings */; };
+		6CA167CB186E80D0008F3F00 /* ExtendImageServiceForTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167CA186E80D0008F3F00 /* ExtendImageServiceForTwitter.m */; };
+		6CA167D7186ECFF8008F3F00 /* ImageServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167D6186ECFF8008F3F00 /* ImageServiceManager.m */; };
+		6CF4E33A186ED64100F01C59 /* InstagramImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4E339186ED64100F01C59 /* InstagramImageService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CA167D0186E81C9008F3F00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CA1679B186E7D0C008F3F00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA167BC186E8037008F3F00;
+			remoteInfo = ExtendImageServiceForTwitter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6CA167A6186E7D0C008F3F00 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6CA167A9186E7D0C008F3F00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6CA167AA186E7D0C008F3F00 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6CA167AB186E7D0C008F3F00 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6CA167BD186E8037008F3F00 /* ExtendImageServiceForTwitter.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtendImageServiceForTwitter.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA167C1186E8037008F3F00 /* ExtendImageServiceForTwitter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExtendImageServiceForTwitter-Info.plist"; sourceTree = "<group>"; };
+		6CA167C3186E8037008F3F00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6CA167C9186E80D0008F3F00 /* ExtendImageServiceForTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendImageServiceForTwitter.h; sourceTree = "<group>"; };
+		6CA167CA186E80D0008F3F00 /* ExtendImageServiceForTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendImageServiceForTwitter.m; sourceTree = "<group>"; };
+		6CA167D3186E8CD7008F3F00 /* TwitterMacProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterMacProtocols.h; sourceTree = "<group>"; };
+		6CA167D4186E8D2D008F3F00 /* SimblPluginsForTwitter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimblPluginsForTwitter-Prefix.pch"; sourceTree = "<group>"; };
+		6CA167D5186ECFF8008F3F00 /* ImageServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageServiceManager.h; sourceTree = "<group>"; };
+		6CA167D6186ECFF8008F3F00 /* ImageServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageServiceManager.m; sourceTree = "<group>"; };
+		6CF4E338186ED64100F01C59 /* InstagramImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramImageService.h; sourceTree = "<group>"; };
+		6CF4E339186ED64100F01C59 /* InstagramImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramImageService.m; sourceTree = "<group>"; };
+		6CF4E33B186EF41B00F01C59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CA167BA186E8037008F3F00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA167BE186E8037008F3F00 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CA1679A186E7D0C008F3F00 = {
+			isa = PBXGroup;
+			children = (
+				6CF4E33B186EF41B00F01C59 /* README.md */,
+				6CA167B8186E7D1B008F3F00 /* Common */,
+				6CA167BF186E8037008F3F00 /* ExtendImageServiceForTwitter */,
+				6CA167A5186E7D0C008F3F00 /* Frameworks */,
+				6CA167A4186E7D0C008F3F00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CA167A4186E7D0C008F3F00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CA167BD186E8037008F3F00 /* ExtendImageServiceForTwitter.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CA167A5186E7D0C008F3F00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CA167A6186E7D0C008F3F00 /* Cocoa.framework */,
+				6CA167A8186E7D0C008F3F00 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CA167A8186E7D0C008F3F00 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CA167A9186E7D0C008F3F00 /* Foundation.framework */,
+				6CA167AA186E7D0C008F3F00 /* CoreData.framework */,
+				6CA167AB186E7D0C008F3F00 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6CA167B8186E7D1B008F3F00 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6CA167D4186E8D2D008F3F00 /* SimblPluginsForTwitter-Prefix.pch */,
+				6CA167D3186E8CD7008F3F00 /* TwitterMacProtocols.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6CA167BF186E8037008F3F00 /* ExtendImageServiceForTwitter */ = {
+			isa = PBXGroup;
+			children = (
+				6CA167C9186E80D0008F3F00 /* ExtendImageServiceForTwitter.h */,
+				6CA167CA186E80D0008F3F00 /* ExtendImageServiceForTwitter.m */,
+				6CA167D5186ECFF8008F3F00 /* ImageServiceManager.h */,
+				6CA167D6186ECFF8008F3F00 /* ImageServiceManager.m */,
+				6CF4E338186ED64100F01C59 /* InstagramImageService.h */,
+				6CF4E339186ED64100F01C59 /* InstagramImageService.m */,
+				6CA167C0186E8037008F3F00 /* Supporting Files */,
+			);
+			path = ExtendImageServiceForTwitter;
+			sourceTree = "<group>";
+		};
+		6CA167C0186E8037008F3F00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CA167C1186E8037008F3F00 /* ExtendImageServiceForTwitter-Info.plist */,
+				6CA167C2186E8037008F3F00 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CA167BC186E8037008F3F00 /* ExtendImageServiceForTwitter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA167C6186E8037008F3F00 /* Build configuration list for PBXNativeTarget "ExtendImageServiceForTwitter" */;
+			buildPhases = (
+				6CA167B9186E8037008F3F00 /* Sources */,
+				6CA167BA186E8037008F3F00 /* Frameworks */,
+				6CA167BB186E8037008F3F00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtendImageServiceForTwitter;
+			productName = ExtendImageServiceForTwitter;
+			productReference = 6CA167BD186E8037008F3F00 /* ExtendImageServiceForTwitter.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CA1679B186E7D0C008F3F00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Norio Nomura";
+			};
+			buildConfigurationList = 6CA1679E186E7D0C008F3F00 /* Build configuration list for PBXProject "SimblPluginsForTwitter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6CA1679A186E7D0C008F3F00;
+			productRefGroup = 6CA167A4186E7D0C008F3F00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CA167BC186E8037008F3F00 /* ExtendImageServiceForTwitter */,
+				6CA167CC186E81B4008F3F00 /* SimblPluginsForTwitter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CA167BB186E8037008F3F00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA167C4186E8037008F3F00 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CA167D2186E8412008F3F00 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\ncd ${TARGET_BUILD_DIR}\nzip -r ${SRCROOT}/downloads/${PRODUCT_NAME}-${VERSION}.zip *.bundle\nfi";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CA167B9186E8037008F3F00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF4E33A186ED64100F01C59 /* InstagramImageService.m in Sources */,
+				6CA167CB186E80D0008F3F00 /* ExtendImageServiceForTwitter.m in Sources */,
+				6CA167D7186ECFF8008F3F00 /* ImageServiceManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CA167D1186E81C9008F3F00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CA167BC186E8037008F3F00 /* ExtendImageServiceForTwitter */;
+			targetProxy = 6CA167D0186E81C9008F3F00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CA167C2186E8037008F3F00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA167C3186E8037008F3F00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CA167B3186E7D0C008F3F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Common/SimblPluginsForTwitter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6CA167B4186E7D0C008F3F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Common/SimblPluginsForTwitter-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6CA167C7186E8037008F3F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ExtendImageServiceForTwitter/ExtendImageServiceForTwitter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSION = 1.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6CA167C8186E8037008F3F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "ExtendImageServiceForTwitter/ExtendImageServiceForTwitter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSION = 1.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		6CA167CE186E81B4008F3F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSION = 1.0;
+			};
+			name = Debug;
+		};
+		6CA167CF186E81B4008F3F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSION = 1.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CA1679E186E7D0C008F3F00 /* Build configuration list for PBXProject "SimblPluginsForTwitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA167B3186E7D0C008F3F00 /* Debug */,
+				6CA167B4186E7D0C008F3F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA167C6186E8037008F3F00 /* Build configuration list for PBXNativeTarget "ExtendImageServiceForTwitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA167C7186E8037008F3F00 /* Debug */,
+				6CA167C8186E8037008F3F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA167CD186E81B4008F3F00 /* Build configuration list for PBXAggregateTarget "SimblPluginsForTwitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA167CE186E81B4008F3F00 /* Debug */,
+				6CA167CF186E81B4008F3F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CA1679B186E7D0C008F3F00 /* Project object */;
+}
