@@ -26,10 +26,11 @@
 		6CA167C4186E8037008F3F00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CA167C2186E8037008F3F00 /* InfoPlist.strings */; };
 		6CA167CB186E80D0008F3F00 /* ExtendImageServiceForTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167CA186E80D0008F3F00 /* ExtendImageServiceForTwitter.m */; };
 		6CA167D7186ECFF8008F3F00 /* ImageServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167D6186ECFF8008F3F00 /* ImageServiceManager.m */; };
-		6CDFF52218799BDA00D5C1F1 /* MiilImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFF52118799BDA00D5C1F1 /* MiilImageService.m */; };
 		6CDFF5171879785300D5C1F1 /* TwitPicImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFF5161879785300D5C1F1 /* TwitPicImageService.m */; };
 		6CDFF51A1879909500D5C1F1 /* TwippleImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFF5191879909500D5C1F1 /* TwippleImageService.m */; };
 		6CDFF51D1879983F00D5C1F1 /* ImglyImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFF51C1879983F00D5C1F1 /* ImglyImageService.m */; };
+		6CDFF52218799BDA00D5C1F1 /* MiilImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFF52118799BDA00D5C1F1 /* MiilImageService.m */; };
+		6CDFF52518799E8700D5C1F1 /* CameraPlusImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFF52418799E8700D5C1F1 /* CameraPlusImageService.m */; };
 		6CF4E33A186ED64100F01C59 /* InstagramImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4E339186ED64100F01C59 /* InstagramImageService.m */; };
 /* End PBXBuildFile section */
 
@@ -57,14 +58,16 @@
 		6CA167D4186E8D2D008F3F00 /* SimblPluginsForTwitter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimblPluginsForTwitter-Prefix.pch"; sourceTree = "<group>"; };
 		6CA167D5186ECFF8008F3F00 /* ImageServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageServiceManager.h; sourceTree = "<group>"; };
 		6CA167D6186ECFF8008F3F00 /* ImageServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageServiceManager.m; sourceTree = "<group>"; };
-		6CDFF52018799BDA00D5C1F1 /* MiilImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiilImageService.h; sourceTree = "<group>"; };
-		6CDFF52118799BDA00D5C1F1 /* MiilImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiilImageService.m; sourceTree = "<group>"; };
 		6CDFF5151879785300D5C1F1 /* TwitPicImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitPicImageService.h; sourceTree = "<group>"; };
 		6CDFF5161879785300D5C1F1 /* TwitPicImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitPicImageService.m; sourceTree = "<group>"; };
 		6CDFF5181879909500D5C1F1 /* TwippleImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwippleImageService.h; sourceTree = "<group>"; };
 		6CDFF5191879909500D5C1F1 /* TwippleImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwippleImageService.m; sourceTree = "<group>"; };
 		6CDFF51B1879983F00D5C1F1 /* ImglyImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImglyImageService.h; sourceTree = "<group>"; };
 		6CDFF51C1879983F00D5C1F1 /* ImglyImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImglyImageService.m; sourceTree = "<group>"; };
+		6CDFF52018799BDA00D5C1F1 /* MiilImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiilImageService.h; sourceTree = "<group>"; };
+		6CDFF52118799BDA00D5C1F1 /* MiilImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiilImageService.m; sourceTree = "<group>"; };
+		6CDFF52318799E8700D5C1F1 /* CameraPlusImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraPlusImageService.h; sourceTree = "<group>"; };
+		6CDFF52418799E8700D5C1F1 /* CameraPlusImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraPlusImageService.m; sourceTree = "<group>"; };
 		6CF4E338186ED64100F01C59 /* InstagramImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramImageService.h; sourceTree = "<group>"; };
 		6CF4E339186ED64100F01C59 /* InstagramImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramImageService.m; sourceTree = "<group>"; };
 		6CF4E33B186EF41B00F01C59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				6CDFF52018799BDA00D5C1F1 /* MiilImageService.h */,
 				6CDFF52118799BDA00D5C1F1 /* MiilImageService.m */,
 				6CDFF51F18799AAC00D5C1F1 /* TwitPic */,
+				6CDFF52318799E8700D5C1F1 /* CameraPlusImageService.h */,
+				6CDFF52418799E8700D5C1F1 /* CameraPlusImageService.m */,
 				6CA167C0186E8037008F3F00 /* Supporting Files */,
 			);
 			path = ExtendImageServiceForTwitter;
@@ -253,6 +258,7 @@
 				6CDFF51A1879909500D5C1F1 /* TwippleImageService.m in Sources */,
 				6CA167CB186E80D0008F3F00 /* ExtendImageServiceForTwitter.m in Sources */,
 				6CDFF51D1879983F00D5C1F1 /* ImglyImageService.m in Sources */,
+				6CDFF52518799E8700D5C1F1 /* CameraPlusImageService.m in Sources */,
 				6CA167D7186ECFF8008F3F00 /* ImageServiceManager.m in Sources */,
 				6CDFF52218799BDA00D5C1F1 /* MiilImageService.m in Sources */,
 			);
