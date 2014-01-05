@@ -135,12 +135,7 @@
 				6CA167D6186ECFF8008F3F00 /* ImageServiceManager.m */,
 				6CF4E338186ED64100F01C59 /* InstagramImageService.h */,
 				6CF4E339186ED64100F01C59 /* InstagramImageService.m */,
-				6CDFF5151879785300D5C1F1 /* TwitPicImageService.h */,
-				6CDFF5161879785300D5C1F1 /* TwitPicImageService.m */,
-				6CDFF5181879909500D5C1F1 /* TwippleImageService.h */,
-				6CDFF5191879909500D5C1F1 /* TwippleImageService.m */,
-				6CDFF51B1879983F00D5C1F1 /* ImglyImageService.h */,
-				6CDFF51C1879983F00D5C1F1 /* ImglyImageService.m */,
+				6CDFF51F18799AAC00D5C1F1 /* TwitPic */,
 				6CA167C0186E8037008F3F00 /* Supporting Files */,
 			);
 			path = ExtendImageServiceForTwitter;
@@ -153,6 +148,19 @@
 				6CA167C2186E8037008F3F00 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CDFF51F18799AAC00D5C1F1 /* TwitPic */ = {
+			isa = PBXGroup;
+			children = (
+				6CDFF5151879785300D5C1F1 /* TwitPicImageService.h */,
+				6CDFF5161879785300D5C1F1 /* TwitPicImageService.m */,
+				6CDFF5181879909500D5C1F1 /* TwippleImageService.h */,
+				6CDFF5191879909500D5C1F1 /* TwippleImageService.m */,
+				6CDFF51B1879983F00D5C1F1 /* ImglyImageService.h */,
+				6CDFF51C1879983F00D5C1F1 /* ImglyImageService.m */,
+			);
+			name = TwitPic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
