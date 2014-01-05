@@ -369,7 +369,7 @@
 				);
 				INFOPLIST_FILE = "ExtendImageServiceForTwitter/ExtendImageServiceForTwitter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.0;
+				VERSION = 1.1;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -380,7 +380,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "ExtendImageServiceForTwitter/ExtendImageServiceForTwitter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.0;
+				VERSION = 1.1;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
