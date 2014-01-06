@@ -4,12 +4,17 @@ SimblPluginsForTwitter
 
 Included plugins are  following:
 
-- ExtendImageServiceForTwitter adds Instagram preview support.
+- `ExtendImageServiceForTwitter` adds media preview for following services:
+    - [img.ly](http://img.ly)
+    - [instagram.com](http://instagram.com)
+    - [miil.me](http://miil.me)
+    - [twitpic.com](http://twitpic.com)
+    - [p.twipple.jp](http://p.twipple.jp)
 
 How to install
 --------------
 1. Make sure you have installed SIMBL which supports sandbox. (e.g. [EasySIMBL](https://github.com/norio-nomura/EasySIMBL))
-2. Download [SimblPluginsForTwitter-1.0.zip](http://github.com/norio-nomura/SimblPluginsForTwitter/releases/download/1.0/SimblPluginsForTwitter-1.0.zip) (2013/12/28 updated)
+2. Download [SimblPluginsForTwitter-1.1.zip](http://github.com/norio-nomura/SimblPluginsForTwitter/releases/download/1.1/SimblPluginsForTwitter-1.1.zip) (2014/01/06 updated)
 3. Copy all `*.bundle` to `~/Library/Application Support/SIMBL/Plugins`.
    (If using EasySIMBL, double clicking the bundle will install it.)
 4. Restart *Twitter for Mac*.
