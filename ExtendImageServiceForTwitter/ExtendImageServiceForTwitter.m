@@ -50,13 +50,9 @@
 
 - (id)ExtendImageServiceForTwitter_largeURL;
 {
-    id url = nil;
     id<SimblPluginsForTwitter_TwitterEntityMedia>media = (id<SimblPluginsForTwitter_TwitterEntityMedia>)self;
-    NSURLComponents *mediaURLComponents = [NSURLComponents componentsWithURL:media.mediaURL resolvingAgainstBaseURL:YES];
-    if ([mediaURLComponents.host hasSuffix:@"instagram.com"]) {
-        mediaURLComponents.query = @"size=l";
-        url = mediaURLComponents.URL;
-    } else {
+    id url = [ImageServiceManager largeURLForTwitterEntityMedia:media];
+    if (!url) {
         url = [self ExtendImageServiceForTwitter_largeURL];
     }
     return url;
@@ -64,42 +60,30 @@
 
 - (id)ExtendImageServiceForTwitter_mediumURL;
 {
-    id url = nil;
     id<SimblPluginsForTwitter_TwitterEntityMedia>media = (id<SimblPluginsForTwitter_TwitterEntityMedia>)self;
-    NSURLComponents *mediaURLComponents = [NSURLComponents componentsWithURL:media.mediaURL resolvingAgainstBaseURL:YES];
-    if ([mediaURLComponents.host hasSuffix:@"instagram.com"]) {
-        mediaURLComponents.query = @"size=m";
-        url = mediaURLComponents.URL;
-    } else {
-        url = [self ExtendImageServiceForTwitter_largeURL];
+    id url = [ImageServiceManager mediumURLForTwitterEntityMedia:media];
+    if (!url) {
+        url = [self ExtendImageServiceForTwitter_mediumURL];
     }
     return url;
 }
 
 - (id)ExtendImageServiceForTwitter_smallURL;
 {
-    id url = nil;
     id<SimblPluginsForTwitter_TwitterEntityMedia>media = (id<SimblPluginsForTwitter_TwitterEntityMedia>)self;
-    NSURLComponents *mediaURLComponents = [NSURLComponents componentsWithURL:media.mediaURL resolvingAgainstBaseURL:YES];
-    if ([mediaURLComponents.host hasSuffix:@"instagram.com"]) {
-        mediaURLComponents.query = @"size=t";
-        url = mediaURLComponents.URL;
-    } else {
-        url = [self ExtendImageServiceForTwitter_largeURL];
+    id url = [ImageServiceManager smallURLForTwitterEntityMedia:media];
+    if (!url) {
+        url = [self ExtendImageServiceForTwitter_smallURL];
     }
     return url;
 }
 
 - (id)ExtendImageServiceForTwitter_thumbURL;
 {
-    id url = nil;
     id<SimblPluginsForTwitter_TwitterEntityMedia>media = (id<SimblPluginsForTwitter_TwitterEntityMedia>)self;
-    NSURLComponents *mediaURLComponents = [NSURLComponents componentsWithURL:media.mediaURL resolvingAgainstBaseURL:YES];
-    if ([mediaURLComponents.host hasSuffix:@"instagram.com"]) {
-        mediaURLComponents.query = @"size=t";
-        url = mediaURLComponents.URL;
-    } else {
-        url = [self ExtendImageServiceForTwitter_largeURL];
+    id url = [ImageServiceManager thumbURLForTwitterEntityMedia:media];
+    if (!url) {
+        url = [self ExtendImageServiceForTwitter_thumbURL];
     }
     return url;
 }
