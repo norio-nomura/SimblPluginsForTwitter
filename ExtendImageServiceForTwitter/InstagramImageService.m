@@ -18,7 +18,7 @@
 
 - (BOOL)canHandleURL:(NSURL *)url;
 {
-    return [url.host hasSuffix:@"instagram.com"] && [url.path hasPrefix:@"/p/"];
+    return NSOrderedSame == [url.host compare:@"instagram.com" options:NSCaseInsensitiveSearch] && [url.path hasPrefix:@"/p/"];
 }
 
 - (NSDictionary *)mediaInfoFromUrlInfo:(NSDictionary *)urlInfo;
