@@ -18,7 +18,7 @@
 
 - (BOOL)canHandleURL:(NSURL *)url;
 {
-    return [url.host hasSuffix:@"miil.me"] && [url.path hasPrefix:@"/p/"];
+    return NSOrderedSame == [url.host compare:@"miil.me" options:NSCaseInsensitiveSearch] && [url.path hasPrefix:@"/p/"];
 }
 
 - (NSDictionary *)mediaInfoFromUrlInfo:(NSDictionary *)urlInfo;

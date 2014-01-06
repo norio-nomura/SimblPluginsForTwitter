@@ -20,7 +20,7 @@
 {
     NSArray *components = [url.path componentsSeparatedByString:@"/"];
     
-    return [url.host hasSuffix:@"p.twipple.jp"] && ([components count] == 2 ||
+    return NSOrderedSame == [url.host compare:@"p.twipple.jp" options:NSCaseInsensitiveSearch] && ([components count] == 2 ||
                                                    ([components count] > 1 && [components[1] isEqualToString:@"show"]));
 }
 

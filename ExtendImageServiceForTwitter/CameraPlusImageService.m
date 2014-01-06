@@ -20,7 +20,7 @@
 {
     NSArray *components = [url.path componentsSeparatedByString:@"/"];
     
-    return [url.host hasSuffix:@"campl.us"] && [components count] == 2;
+    return NSOrderedSame == [url.host compare:@"campl.us" options:NSCaseInsensitiveSearch] && [components count] == 2;
 }
 
 - (NSDictionary *)mediaInfoFromUrlInfo:(NSDictionary *)urlInfo;

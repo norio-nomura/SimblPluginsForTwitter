@@ -20,7 +20,7 @@
 {
     NSArray *components = [url.path componentsSeparatedByString:@"/"];
     
-    return [url.host hasSuffix:@"img.ly"] && ([components count] == 2 ||
+    return NSOrderedSame == [url.host compare:@"img.ly" options:NSCaseInsensitiveSearch] && ([components count] == 2 ||
                                                    ([components count] > 1 && [components[1] isEqualToString:@"show"]));
 }
 
