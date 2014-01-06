@@ -13,12 +13,6 @@
 
 @end
 
-@protocol SimblPluginsForTwitter_TwitterEntitySet
-
-+ (id)entitiesWithDict:(NSDictionary*)dict;
-
-@end
-
 @protocol SimblPluginsForTwitter_TwitterEntityMedia
 
 @property(retain, nonatomic) NSString *mediaID;
@@ -36,3 +30,27 @@
 
 @end
 
+@protocol SimblPluginsForTwitter_TwitterEntitySet
+
+@property(readonly, nonatomic) id<SimblPluginsForTwitter_TwitterEntityMedia> media;
++ (id)entitiesWithDict:(NSDictionary*)dict;
+
+@end
+
+@protocol SimblPluginsForTwitter_TwitterStatus
+
+@property(retain, nonatomic) id<SimblPluginsForTwitter_TwitterEntitySet> entities;
+
+@end
+
+@protocol SimblPluginsForTwitter_TMStatusCell
+
+@property(retain, nonatomic) id<SimblPluginsForTwitter_TwitterStatus> status;
+
+@end
+
+@protocol SimblPluginsForTwitter_TMDetailedStatusCell<SimblPluginsForTwitter_TMStatusCell>
+
+- (void)didDownloadPhoto:(NSData*)data info:(id)arg2;
+
+@end

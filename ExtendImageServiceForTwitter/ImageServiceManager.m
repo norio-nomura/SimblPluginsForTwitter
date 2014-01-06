@@ -97,10 +97,20 @@
     }
 }
 
++ (NSURL*)largeURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
+{
+    return [[self manager]largeURLForTwitterEntityMedia:media];
+}
+
 - (NSURL*)largeURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
 {
     id<ImageService>service = [self serviceForURL:media.mediaURL];
     return [service largeURLForTwitterEntityMedia:media];
+}
+
++ (NSURL*)mediumURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
+{
+    return [[self manager]mediumURLForTwitterEntityMedia:media];
 }
 
 - (NSURL*)mediumURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
@@ -109,10 +119,20 @@
     return [service mediumURLForTwitterEntityMedia:media];
 }
 
++ (NSURL*)smallURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
+{
+    return [[self manager]smallURLForTwitterEntityMedia:media];
+}
+
 - (NSURL*)smallURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
 {
     id<ImageService>service = [self serviceForURL:media.mediaURL];
     return [service smallURLForTwitterEntityMedia:media];
+}
+
++ (NSURL*)thumbURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
+{
+    return [[self manager]thumbURLForTwitterEntityMedia:media];
 }
 
 - (NSURL*)thumbURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
