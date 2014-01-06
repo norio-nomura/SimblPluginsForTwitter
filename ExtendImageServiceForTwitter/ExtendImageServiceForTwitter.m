@@ -126,6 +126,27 @@
 
 @end
 
+#pragma mark - TMDetailedStatusCell
+
+@implementation NSObject (TMDetailedStatusCell)
+
+- (void)ExtendImageServiceForTwitter_didDownloadPhoto:(NSData*)data info:(id)arg2;
+{
+    id<SimblPluginsForTwitter_TMDetailedStatusCell>cell = (id<SimblPluginsForTwitter_TMDetailedStatusCell>)self;
+    
+    CGImageSourceRef source = CGImageSourceCreateWithData((__bridge CFDataRef)(data), NULL);
+    CGImageRef image = CGImageSourceCreateImageAtIndex(source, 0, NULL);
+    
+    cell.status.entities.media.largeSize = CGSizeMake(CGImageGetWidth(image), CGImageGetHeight(image));
+    
+    [self ExtendImageServiceForTwitter_didDownloadPhoto:data info:arg2];
+    
+    CGImageRelease(image);
+    CFRelease(source);
+}
+
+@end
+
 @implementation ExtendImageServiceForTwitter
 
 /*!
@@ -154,6 +175,9 @@
         from = objc_getClass("ABHTTPRequest");
         method_exchangeImplementations(class_getInstanceMethod(from, @selector(startRequest)),
                                        class_getInstanceMethod(to, @selector(ExtendImageServiceForTwitter_startRequest)));
+        from = objc_getClass("TMDetailedStatusCell");
+        method_exchangeImplementations(class_getInstanceMethod(from, @selector(didDownloadPhoto:info:)),
+                                       class_getInstanceMethod(to, @selector(ExtendImageServiceForTwitter_didDownloadPhoto:info:)));
     }
 }
 
