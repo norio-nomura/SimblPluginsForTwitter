@@ -23,7 +23,7 @@
 	<key>CFBundleVersion</key>
 	<string>2</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2013年 Norio Nomura. All rights reserved.</string>
+	<string>© 2013 Norio Nomura</string>
 	<key>NSPrincipalClass</key>
 	<string>ExtendImageServiceForTwitter</string>
 	<key>SIMBLTargetApplications</key>
