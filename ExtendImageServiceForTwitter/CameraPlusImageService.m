@@ -27,7 +27,6 @@
 {
     NSString *expanded_url = urlInfo[@"expanded_url"];
     NSURLComponents *urlComponents = [NSURLComponents componentsWithString:expanded_url];
-    urlComponents.path = [urlComponents.path stringByAppendingString:@":800px"];
     urlComponents.query = @"";
     NSString *media_url = [urlComponents.URL absoluteString];
     urlComponents.scheme = @"https";
@@ -40,7 +39,6 @@
     NSString *expanded_url = dict[@"expanded_url"];
     NSURLComponents *urlComponents = [NSURLComponents componentsWithString:expanded_url];
     media.mediaID = [urlComponents.path lastPathComponent];
-    urlComponents.path = [urlComponents.path stringByAppendingString:@":800px"];
     urlComponents.query = @"";
     media.mediaURL = urlComponents.URL;
     media.largeSize = CGSizeMake(800, 800);
