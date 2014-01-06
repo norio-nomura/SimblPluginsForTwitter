@@ -5,6 +5,7 @@ SimblPluginsForTwitter
 Included plugins are  following:
 
 - `ExtendImageServiceForTwitter` adds media preview for following services:
+    - [campl.us](http://campl.us)
     - [img.ly](http://img.ly)
     - [instagram.com](http://instagram.com)
     - [miil.me](http://miil.me)
