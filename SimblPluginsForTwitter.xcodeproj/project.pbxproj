@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		6C7C6F0B1894E4B8006F44BD /* ImgurImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C6F0A1894E4B8006F44BD /* ImgurImageService.m */; };
 		6CA167BE186E8037008F3F00 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA167A6186E7D0C008F3F00 /* Cocoa.framework */; };
 		6CA167C4186E8037008F3F00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CA167C2186E8037008F3F00 /* InfoPlist.strings */; };
 		6CA167CB186E80D0008F3F00 /* ExtendImageServiceForTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167CA186E80D0008F3F00 /* ExtendImageServiceForTwitter.m */; };
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C7C6F091894E4B8006F44BD /* ImgurImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurImageService.h; sourceTree = "<group>"; };
+		6C7C6F0A1894E4B8006F44BD /* ImgurImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurImageService.m; sourceTree = "<group>"; };
 		6CA167A6186E7D0C008F3F00 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6CA167A9186E7D0C008F3F00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6CA167AA186E7D0C008F3F00 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -146,6 +149,8 @@
 				6CDFF51F18799AAC00D5C1F1 /* TwitPic */,
 				6CDFF52318799E8700D5C1F1 /* CameraPlusImageService.h */,
 				6CDFF52418799E8700D5C1F1 /* CameraPlusImageService.m */,
+				6C7C6F091894E4B8006F44BD /* ImgurImageService.h */,
+				6C7C6F0A1894E4B8006F44BD /* ImgurImageService.m */,
 				6CA167C0186E8037008F3F00 /* Supporting Files */,
 			);
 			path = ExtendImageServiceForTwitter;
@@ -257,6 +262,7 @@
 				6CF4E33A186ED64100F01C59 /* InstagramImageService.m in Sources */,
 				6CDFF51A1879909500D5C1F1 /* TwippleImageService.m in Sources */,
 				6CA167CB186E80D0008F3F00 /* ExtendImageServiceForTwitter.m in Sources */,
+				6C7C6F0B1894E4B8006F44BD /* ImgurImageService.m in Sources */,
 				6CDFF51D1879983F00D5C1F1 /* ImglyImageService.m in Sources */,
 				6CDFF52518799E8700D5C1F1 /* CameraPlusImageService.m in Sources */,
 				6CA167D7186ECFF8008F3F00 /* ImageServiceManager.m in Sources */,

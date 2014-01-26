@@ -7,6 +7,7 @@ Included plugins are  following:
 - `ExtendImageServiceForTwitter` adds media preview for following services:
     - [campl.us](http://campl.us)
     - [img.ly](http://img.ly)
+    - [imgurl.com](http://imgurl.com)
     - [instagram.com](http://instagram.com)
     - [miil.me](http://miil.me)
     - [twitpic.com](http://twitpic.com)
