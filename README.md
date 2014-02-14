@@ -10,6 +10,7 @@ Included plugins are  following:
     - [imgurl.com](http://imgurl.com)
     - [instagram.com](http://instagram.com)
     - [miil.me](http://miil.me)
+    - [moby.to](http://moby.to)
     - [twitpic.com](http://twitpic.com)
     - [p.twipple.jp](http://p.twipple.jp)
 
