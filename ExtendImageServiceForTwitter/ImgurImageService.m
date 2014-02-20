@@ -54,7 +54,7 @@
 }
 
 /*!
- *  See: http://api.camerapl.us/web-api
+ *  See: imgur.com does not publish official api for thumnail redirecting. But you should see http://api.imgur.com
  */
 
 - (NSURL*)largeURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
