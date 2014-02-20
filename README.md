@@ -11,6 +11,7 @@ Included plugins are  following:
     - [instagram.com](http://instagram.com)
     - [miil.me](http://miil.me)
     - [moby.to](http://moby.to)
+    - [mstr.in](https://mstr.in)
     - [twitpic.com](http://twitpic.com)
     - [p.twipple.jp](http://p.twipple.jp)
 
