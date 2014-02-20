@@ -22,10 +22,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		6C4851FA18AE303000C62731 /* MobypictureImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4851F918AE303000C62731 /* MobypictureImageService.m */; };
+		6C7C6F0B1894E4B8006F44BD /* ImgurImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C6F0A1894E4B8006F44BD /* ImgurImageService.m */; };
 		6CA167BE186E8037008F3F00 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA167A6186E7D0C008F3F00 /* Cocoa.framework */; };
 		6CA167C4186E8037008F3F00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CA167C2186E8037008F3F00 /* InfoPlist.strings */; };
 		6CA167CB186E80D0008F3F00 /* ExtendImageServiceForTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167CA186E80D0008F3F00 /* ExtendImageServiceForTwitter.m */; };
 		6CA167D7186ECFF8008F3F00 /* ImageServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167D6186ECFF8008F3F00 /* ImageServiceManager.m */; };
+		6CA7A79D18B5F403007B4A19 /* MstrInImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7A79C18B5F403007B4A19 /* MstrInImageService.m */; };
 		6CDFF5171879785300D5C1F1 /* TwitPicImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFF5161879785300D5C1F1 /* TwitPicImageService.m */; };
 		6CDFF51A1879909500D5C1F1 /* TwippleImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFF5191879909500D5C1F1 /* TwippleImageService.m */; };
 		6CDFF51D1879983F00D5C1F1 /* ImglyImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDFF51C1879983F00D5C1F1 /* ImglyImageService.m */; };
@@ -45,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C4851F818AE302F00C62731 /* MobypictureImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobypictureImageService.h; sourceTree = "<group>"; };
+		6C4851F918AE303000C62731 /* MobypictureImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobypictureImageService.m; sourceTree = "<group>"; };
+		6C7C6F091894E4B8006F44BD /* ImgurImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurImageService.h; sourceTree = "<group>"; };
+		6C7C6F0A1894E4B8006F44BD /* ImgurImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurImageService.m; sourceTree = "<group>"; };
 		6CA167A6186E7D0C008F3F00 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6CA167A9186E7D0C008F3F00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6CA167AA186E7D0C008F3F00 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -58,6 +65,8 @@
 		6CA167D4186E8D2D008F3F00 /* SimblPluginsForTwitter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimblPluginsForTwitter-Prefix.pch"; sourceTree = "<group>"; };
 		6CA167D5186ECFF8008F3F00 /* ImageServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageServiceManager.h; sourceTree = "<group>"; };
 		6CA167D6186ECFF8008F3F00 /* ImageServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageServiceManager.m; sourceTree = "<group>"; };
+		6CA7A79B18B5F403007B4A19 /* MstrInImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MstrInImageService.h; sourceTree = "<group>"; };
+		6CA7A79C18B5F403007B4A19 /* MstrInImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MstrInImageService.m; sourceTree = "<group>"; };
 		6CDFF5151879785300D5C1F1 /* TwitPicImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitPicImageService.h; sourceTree = "<group>"; };
 		6CDFF5161879785300D5C1F1 /* TwitPicImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitPicImageService.m; sourceTree = "<group>"; };
 		6CDFF5181879909500D5C1F1 /* TwippleImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwippleImageService.h; sourceTree = "<group>"; };
@@ -146,6 +155,12 @@
 				6CDFF51F18799AAC00D5C1F1 /* TwitPic */,
 				6CDFF52318799E8700D5C1F1 /* CameraPlusImageService.h */,
 				6CDFF52418799E8700D5C1F1 /* CameraPlusImageService.m */,
+				6C7C6F091894E4B8006F44BD /* ImgurImageService.h */,
+				6C7C6F0A1894E4B8006F44BD /* ImgurImageService.m */,
+				6C4851F818AE302F00C62731 /* MobypictureImageService.h */,
+				6C4851F918AE303000C62731 /* MobypictureImageService.m */,
+				6CA7A79B18B5F403007B4A19 /* MstrInImageService.h */,
+				6CA7A79C18B5F403007B4A19 /* MstrInImageService.m */,
 				6CA167C0186E8037008F3F00 /* Supporting Files */,
 			);
 			path = ExtendImageServiceForTwitter;
@@ -255,10 +270,13 @@
 			files = (
 				6CDFF5171879785300D5C1F1 /* TwitPicImageService.m in Sources */,
 				6CF4E33A186ED64100F01C59 /* InstagramImageService.m in Sources */,
+				6CA7A79D18B5F403007B4A19 /* MstrInImageService.m in Sources */,
 				6CDFF51A1879909500D5C1F1 /* TwippleImageService.m in Sources */,
 				6CA167CB186E80D0008F3F00 /* ExtendImageServiceForTwitter.m in Sources */,
+				6C7C6F0B1894E4B8006F44BD /* ImgurImageService.m in Sources */,
 				6CDFF51D1879983F00D5C1F1 /* ImglyImageService.m in Sources */,
 				6CDFF52518799E8700D5C1F1 /* CameraPlusImageService.m in Sources */,
+				6C4851FA18AE303000C62731 /* MobypictureImageService.m in Sources */,
 				6CA167D7186ECFF8008F3F00 /* ImageServiceManager.m in Sources */,
 				6CDFF52218799BDA00D5C1F1 /* MiilImageService.m in Sources */,
 			);
@@ -369,7 +387,7 @@
 				);
 				INFOPLIST_FILE = "ExtendImageServiceForTwitter/ExtendImageServiceForTwitter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.1.1;
+				VERSION = 1.2;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -380,7 +398,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "ExtendImageServiceForTwitter/ExtendImageServiceForTwitter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.1.1;
+				VERSION = 1.2;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -389,7 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.1;
+				VERSION = 1.2;
 			};
 			name = Debug;
 		};
@@ -397,7 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.1;
+				VERSION = 1.2;
 			};
 			name = Release;
 		};
