@@ -10,6 +10,7 @@ Included plugins are  following:
     - [imgur.com](http://imgur.com)
     - [instagram.com](http://instagram.com)
     - [miil.me](http://miil.me)
+    - [movapic.com](http://movapic.com)
     - [moby.to](http://moby.to)
     - [mstr.in](https://mstr.in)
     - [twitpic.com](http://twitpic.com)
