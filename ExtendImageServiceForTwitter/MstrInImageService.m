@@ -6,8 +6,6 @@
 #import "ImageServiceManager.h"
 #import "MstrInImageService.h"
 
-@protocol ImageService;
-
 @implementation MstrInImageService
 
 +(void)load;
@@ -51,8 +49,8 @@
     media.mediaURL = urlComponents.URL;
     media.largeSize = CGSizeMake(960, 960);
     media.mediumSize = CGSizeMake(960, 960);
-    media.thumbSize = CGSizeMake(960, 960);
-    media.smallSize = CGSizeMake(960, 960);
+    media.thumbSize = CGSizeMake(145, 145);
+    media.smallSize = CGSizeMake(145, 145);
 }
 
 /*!
@@ -81,7 +79,7 @@
 {
     NSURLComponents *mediaURLComponents = [NSURLComponents componentsWithURL:media.mediaURL resolvingAgainstBaseURL:YES];
     mediaURLComponents.host = @"pic.mstr.in";
-    mediaURLComponents.path = [NSString stringWithFormat:@"/images/%@.jpg", media.mediaID];
+    mediaURLComponents.path = [NSString stringWithFormat:@"/thumbnails/%@.jpg", media.mediaID];
     mediaURLComponents.query = @"";
     return mediaURLComponents.URL;
 }
@@ -90,7 +88,7 @@
 {
     NSURLComponents *mediaURLComponents = [NSURLComponents componentsWithURL:media.mediaURL resolvingAgainstBaseURL:YES];
     mediaURLComponents.host = @"pic.mstr.in";
-    mediaURLComponents.path = [NSString stringWithFormat:@"/images/%@.jpg", media.mediaID];
+    mediaURLComponents.path = [NSString stringWithFormat:@"/thumbnails/%@.jpg", media.mediaID];
     mediaURLComponents.query = @"";
     return mediaURLComponents.URL;
 }
