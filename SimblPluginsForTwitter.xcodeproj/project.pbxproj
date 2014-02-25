@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		6C32159718BC7AB200398DF2 /* MovapicImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C32159618BC7AB200398DF2 /* MovapicImageService.m */; };
 		6C4851FA18AE303000C62731 /* MobypictureImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4851F918AE303000C62731 /* MobypictureImageService.m */; };
 		6C7C6F0B1894E4B8006F44BD /* ImgurImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C6F0A1894E4B8006F44BD /* ImgurImageService.m */; };
 		6CA167BE186E8037008F3F00 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA167A6186E7D0C008F3F00 /* Cocoa.framework */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C32159518BC7AB200398DF2 /* MovapicImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovapicImageService.h; sourceTree = "<group>"; };
+		6C32159618BC7AB200398DF2 /* MovapicImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovapicImageService.m; sourceTree = "<group>"; };
 		6C4851F818AE302F00C62731 /* MobypictureImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobypictureImageService.h; sourceTree = "<group>"; };
 		6C4851F918AE303000C62731 /* MobypictureImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobypictureImageService.m; sourceTree = "<group>"; };
 		6C7C6F091894E4B8006F44BD /* ImgurImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurImageService.h; sourceTree = "<group>"; };
@@ -161,6 +164,8 @@
 				6C4851F918AE303000C62731 /* MobypictureImageService.m */,
 				6CA7A79B18B5F403007B4A19 /* MstrInImageService.h */,
 				6CA7A79C18B5F403007B4A19 /* MstrInImageService.m */,
+				6C32159518BC7AB200398DF2 /* MovapicImageService.h */,
+				6C32159618BC7AB200398DF2 /* MovapicImageService.m */,
 				6CA167C0186E8037008F3F00 /* Supporting Files */,
 			);
 			path = ExtendImageServiceForTwitter;
@@ -279,6 +284,7 @@
 				6C4851FA18AE303000C62731 /* MobypictureImageService.m in Sources */,
 				6CA167D7186ECFF8008F3F00 /* ImageServiceManager.m in Sources */,
 				6CDFF52218799BDA00D5C1F1 /* MiilImageService.m in Sources */,
+				6C32159718BC7AB200398DF2 /* MovapicImageService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
