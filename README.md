@@ -6,6 +6,7 @@ Included plugins are  following:
 
 - `ExtendImageServiceForTwitter` adds media preview for following services:
     - [campl.us](http://campl.us)
+    - [gyazo.com](http://gyazo.com)
     - [img.ly](http://img.ly)
     - [imgur.com](http://imgur.com)
     - [instagram.com](http://instagram.com)
