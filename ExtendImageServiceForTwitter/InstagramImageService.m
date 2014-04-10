@@ -18,7 +18,8 @@
 
 - (BOOL)canHandleURL:(NSURL *)url;
 {
-    return NSOrderedSame == [url.host compare:@"instagram.com" options:NSCaseInsensitiveSearch] && [url.path hasPrefix:@"/p/"];
+    NSString *lowercaseHost = [url.host lowercaseString];
+    return ([lowercaseHost isEqualToString:@"instagram.com"] || [lowercaseHost isEqualToString:@"i.instagram.com"]) && [url.path hasPrefix:@"/p/"];
 }
 
 - (NSDictionary *)mediaInfoFromUrlInfo:(NSDictionary *)urlInfo;
