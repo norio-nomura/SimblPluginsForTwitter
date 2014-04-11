@@ -6,6 +6,7 @@ Included plugins are  following:
 
 - `ExtendImageServiceForTwitter` adds media preview for following services:
     - [campl.us](http://campl.us)
+    - [dermandar.com(pnr.ma)](http://www.dermandar.com)
     - [gyazo.com](http://gyazo.com)
     - [img.ly](http://img.ly)
     - [imgur.com](http://imgur.com)
@@ -16,6 +17,7 @@ Included plugins are  following:
     - [mstr.in](https://mstr.in)
     - [twitpic.com](http://twitpic.com)
     - [p.twipple.jp](http://p.twipple.jp)
+    - [dermandar.com(pnr.ma)](http://www.dermandar.com)
 
 How to install
 --------------
