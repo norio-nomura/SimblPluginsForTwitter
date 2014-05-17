@@ -15,6 +15,7 @@ Included plugins are  following:
     - [movapic.com](http://movapic.com)
     - [moby.to](http://moby.to)
     - [mstr.in](https://mstr.in)
+    - [photozou.jp](http://photozou.jp)
     - [twitpic.com](http://twitpic.com)
     - [p.twipple.jp](http://p.twipple.jp)
 
