@@ -17,7 +17,6 @@ Included plugins are  following:
     - [mstr.in](https://mstr.in)
     - [twitpic.com](http://twitpic.com)
     - [p.twipple.jp](http://p.twipple.jp)
-    - [dermandar.com(pnr.ma)](http://www.dermandar.com)
 
 How to install
 --------------
