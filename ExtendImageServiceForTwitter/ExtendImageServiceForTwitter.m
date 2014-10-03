@@ -146,6 +146,11 @@
         method_exchangeImplementations(class_getClassMethod(from, @selector(entitiesWithDict:)),
                                        class_getClassMethod(to, @selector(ExtendImageServiceForTwitter_entitiesWithDict:)));
         from = objc_getClass("TwitterEntityMedia");
+        //3.1
+        if (![from instancesRespondToSelector:@selector(thumbURL)]) {
+            from = objc_getClass("TwitterMedia");
+        }
+        
         method_exchangeImplementations(class_getInstanceMethod(from, @selector(parseDict:)),
                                        class_getInstanceMethod(to, @selector(ExtendImageServiceForTwitter_parseDict:)));
         method_exchangeImplementations(class_getInstanceMethod(from, @selector(largeURL)),

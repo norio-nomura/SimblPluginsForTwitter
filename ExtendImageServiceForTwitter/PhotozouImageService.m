@@ -1,12 +1,12 @@
 //
-//  InstagramImageService.m
+//  PhotozouImageService.m
 //  SimblPluginsForTwitter
 //
 
 #import "ImageServiceManager.h"
-#import "InstagramImageService.h"
+#import "PhotozouImageService.h"
 
-@implementation InstagramImageService
+@implementation PhotozouImageService
 
 +(void)load;
 {
@@ -19,15 +19,20 @@
 - (BOOL)canHandleURL:(NSURL *)url;
 {
     NSString *lowercaseHost = [url.host lowercaseString];
-    return ([lowercaseHost isEqualToString:@"instagram.com"] || [lowercaseHost isEqualToString:@"i.instagram.com"]) && [url.path hasPrefix:@"/p/"];
+    if ([lowercaseHost isEqualToString:@"photozou.jp"]) {
+        NSArray *components = [url.path componentsSeparatedByString:@"/"];
+        return [components count] == 5 && [components[1] isEqualToString:@"photo"] && [components[2] isEqualToString:@"show"];
+    }
+    return NO;
 }
 
 - (NSDictionary *)mediaInfoFromUrlInfo:(NSDictionary *)urlInfo;
 {
     NSString *expanded_url = urlInfo[@"expanded_url"];
     NSURLComponents *urlComponents = [NSURLComponents componentsWithString:expanded_url];
-    urlComponents.path = [urlComponents.path stringByAppendingPathComponent:@"media/"];
-    urlComponents.query = @"size=l";
+    urlComponents.host = @"photozou.jp";
+    urlComponents.query = @"";
+    urlComponents.path = [NSString stringWithFormat:@"/p/img/%@", [urlComponents.path lastPathComponent]];
     NSString *media_url = [urlComponents.URL absoluteString];
     urlComponents.scheme = @"https";
     NSString *media_url_https = [urlComponents.URL absoluteString];
@@ -39,45 +44,46 @@
     NSString *expanded_url = dict[@"expanded_url"];
     NSURLComponents *urlComponents = [NSURLComponents componentsWithString:expanded_url];
     media.mediaID = [urlComponents.path lastPathComponent];
-    urlComponents.path = [urlComponents.path stringByAppendingPathComponent:@"media"];
+    urlComponents.host = @"photozou.jp";
+    urlComponents.query = @"";
+    urlComponents.path = [NSString stringWithFormat:@"/p/img/%@", [urlComponents.path lastPathComponent]];
     media.mediaURL = urlComponents.URL;
-    media.largeSize = CGSizeMake(640, 640);
-    media.mediumSize = CGSizeMake(306, 306);
-    media.thumbSize = CGSizeMake(150, 150);
-    media.smallSize = CGSizeMake(150, 150);
+    // no fixed size exists, but set dummies.
+    media.largeSize = CGSizeMake(450, 450);
+    media.mediumSize = CGSizeMake(450, 450);
+    media.thumbSize = CGSizeMake(120, 120);
+    media.smallSize = CGSizeMake(120, 120);
 }
 
 /*!
- *  See: http://instagram.com/developer/embedding/
- *  Instagram.com returns incorrect media redirect url if UserAgent contains "Twitter".
- *  So, ExtendImageServiceForTwitter replace UserAgent.
+ *  See: http://photozou.jp/basic/api#shortened_api
  */
 
 - (NSURL*)largeURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
 {
     NSURLComponents *mediaURLComponents = [NSURLComponents componentsWithURL:media.mediaURL resolvingAgainstBaseURL:YES];
-    mediaURLComponents.query = @"size=l";
+    mediaURLComponents.path = [NSString stringWithFormat:@"/p/img/%@", [mediaURLComponents.path lastPathComponent]];
     return mediaURLComponents.URL;
 }
 
 - (NSURL*)mediumURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
 {
     NSURLComponents *mediaURLComponents = [NSURLComponents componentsWithURL:media.mediaURL resolvingAgainstBaseURL:YES];
-    mediaURLComponents.query = @"size=m";
+    mediaURLComponents.path = [NSString stringWithFormat:@"/p/img/%@", [mediaURLComponents.path lastPathComponent]];
     return mediaURLComponents.URL;
 }
 
 - (NSURL*)smallURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
 {
     NSURLComponents *mediaURLComponents = [NSURLComponents componentsWithURL:media.mediaURL resolvingAgainstBaseURL:YES];
-    mediaURLComponents.query = @"size=t";
+    mediaURLComponents.path = [NSString stringWithFormat:@"/p/thumb/%@", [mediaURLComponents.path lastPathComponent]];
     return mediaURLComponents.URL;
 }
 
 - (NSURL*)thumbURLForTwitterEntityMedia:(id<SimblPluginsForTwitter_TwitterEntityMedia>)media;
 {
     NSURLComponents *mediaURLComponents = [NSURLComponents componentsWithURL:media.mediaURL resolvingAgainstBaseURL:YES];
-    mediaURLComponents.query = @"size=t";
+    mediaURLComponents.path = [NSString stringWithFormat:@"/p/thumb/%@", [mediaURLComponents.path lastPathComponent]];
     return mediaURLComponents.URL;
 }
 

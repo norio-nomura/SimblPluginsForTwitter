@@ -6,6 +6,7 @@ Included plugins are  following:
 
 - `ExtendImageServiceForTwitter` adds media preview for following services:
     - [campl.us](http://campl.us)
+    - [dermandar.com(pnr.ma)](http://www.dermandar.com)
     - [gyazo.com](http://gyazo.com)
     - [img.ly](http://img.ly)
     - [imgur.com](http://imgur.com)
@@ -14,13 +15,14 @@ Included plugins are  following:
     - [movapic.com](http://movapic.com)
     - [moby.to](http://moby.to)
     - [mstr.in](https://mstr.in)
+    - [photozou.jp](http://photozou.jp)
     - [twitpic.com](http://twitpic.com)
     - [p.twipple.jp](http://p.twipple.jp)
 
 How to install
 --------------
 1. Make sure you have installed SIMBL which supports sandbox. (e.g. [EasySIMBL](https://github.com/norio-nomura/EasySIMBL))
-2. Download [SimblPluginsForTwitter-1.4.zip](http://github.com/norio-nomura/SimblPluginsForTwitter/releases/download/1.4/SimblPluginsForTwitter-1.4.zip) (2014/03/22 updated)
+2. Download [SimblPluginsForTwitter-1.5.zip](http://github.com/norio-nomura/SimblPluginsForTwitter/releases/download/1.5/SimblPluginsForTwitter-1.5.zip) (2014/10/03 updated)
 3. Copy all `*.bundle` to `~/Library/Application Support/SIMBL/Plugins`.
    (If using EasySIMBL, double clicking the bundle will install it.)
 4. Restart *Twitter for Mac*.

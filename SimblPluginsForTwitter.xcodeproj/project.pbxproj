@@ -24,7 +24,9 @@
 /* Begin PBXBuildFile section */
 		6C32159718BC7AB200398DF2 /* MovapicImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C32159618BC7AB200398DF2 /* MovapicImageService.m */; };
 		6C4851FA18AE303000C62731 /* MobypictureImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4851F918AE303000C62731 /* MobypictureImageService.m */; };
+		6C79857218F7999B006DF3BA /* DermandarImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C79857118F7999B006DF3BA /* DermandarImageService.m */; };
 		6C7C6F0B1894E4B8006F44BD /* ImgurImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C6F0A1894E4B8006F44BD /* ImgurImageService.m */; };
+		6C891A7C1927978700031E89 /* PhotozouImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C891A7B1927978700031E89 /* PhotozouImageService.m */; };
 		6CA167BE186E8037008F3F00 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA167A6186E7D0C008F3F00 /* Cocoa.framework */; };
 		6CA167C4186E8037008F3F00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CA167C2186E8037008F3F00 /* InfoPlist.strings */; };
 		6CA167CB186E80D0008F3F00 /* ExtendImageServiceForTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167CA186E80D0008F3F00 /* ExtendImageServiceForTwitter.m */; };
@@ -54,8 +56,12 @@
 		6C32159618BC7AB200398DF2 /* MovapicImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovapicImageService.m; sourceTree = "<group>"; };
 		6C4851F818AE302F00C62731 /* MobypictureImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobypictureImageService.h; sourceTree = "<group>"; };
 		6C4851F918AE303000C62731 /* MobypictureImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobypictureImageService.m; sourceTree = "<group>"; };
+		6C79857018F7999B006DF3BA /* DermandarImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DermandarImageService.h; sourceTree = "<group>"; };
+		6C79857118F7999B006DF3BA /* DermandarImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DermandarImageService.m; sourceTree = "<group>"; };
 		6C7C6F091894E4B8006F44BD /* ImgurImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurImageService.h; sourceTree = "<group>"; };
 		6C7C6F0A1894E4B8006F44BD /* ImgurImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurImageService.m; sourceTree = "<group>"; };
+		6C891A7A1927978700031E89 /* PhotozouImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotozouImageService.h; sourceTree = "<group>"; };
+		6C891A7B1927978700031E89 /* PhotozouImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotozouImageService.m; sourceTree = "<group>"; };
 		6CA167A6186E7D0C008F3F00 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6CA167A9186E7D0C008F3F00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6CA167AA186E7D0C008F3F00 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -171,6 +177,10 @@
 				6C32159618BC7AB200398DF2 /* MovapicImageService.m */,
 				6CA5867218D9A69C00A61D01 /* GyazoImageService.h */,
 				6CA5867318D9A69C00A61D01 /* GyazoImageService.m */,
+				6C79857018F7999B006DF3BA /* DermandarImageService.h */,
+				6C79857118F7999B006DF3BA /* DermandarImageService.m */,
+				6C891A7A1927978700031E89 /* PhotozouImageService.h */,
+				6C891A7B1927978700031E89 /* PhotozouImageService.m */,
 				6CA167C0186E8037008F3F00 /* Supporting Files */,
 			);
 			path = ExtendImageServiceForTwitter;
@@ -283,6 +293,7 @@
 				6CA7A79D18B5F403007B4A19 /* MstrInImageService.m in Sources */,
 				6CDFF51A1879909500D5C1F1 /* TwippleImageService.m in Sources */,
 				6CA167CB186E80D0008F3F00 /* ExtendImageServiceForTwitter.m in Sources */,
+				6C891A7C1927978700031E89 /* PhotozouImageService.m in Sources */,
 				6C7C6F0B1894E4B8006F44BD /* ImgurImageService.m in Sources */,
 				6CDFF51D1879983F00D5C1F1 /* ImglyImageService.m in Sources */,
 				6CDFF52518799E8700D5C1F1 /* CameraPlusImageService.m in Sources */,
@@ -290,6 +301,7 @@
 				6CA5867418D9A69C00A61D01 /* GyazoImageService.m in Sources */,
 				6CA167D7186ECFF8008F3F00 /* ImageServiceManager.m in Sources */,
 				6CDFF52218799BDA00D5C1F1 /* MiilImageService.m in Sources */,
+				6C79857218F7999B006DF3BA /* DermandarImageService.m in Sources */,
 				6C32159718BC7AB200398DF2 /* MovapicImageService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,7 +411,7 @@
 				);
 				INFOPLIST_FILE = "ExtendImageServiceForTwitter/ExtendImageServiceForTwitter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.4;
+				VERSION = 1.5;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -410,7 +422,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "ExtendImageServiceForTwitter/ExtendImageServiceForTwitter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.4;
+				VERSION = 1.5;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -419,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.4;
+				VERSION = 1.5;
 			};
 			name = Debug;
 		};
@@ -427,7 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VERSION = 1.4;
+				VERSION = 1.5;
 			};
 			name = Release;
 		};
